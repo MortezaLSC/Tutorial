@@ -21,10 +21,10 @@ Value   	Permission	                       Directory Listing
 0	        No read, no write, no execute           	---
 1	        No read, no write, execute	              --x
 2	        No read, write, no execute	              -w-
-3	        No read, write, execute	                  -wx
+3	        No read, write, execute	                 -wx
 4	        Read, no write, no execute	              r--
-5	        Read, no write, execute	                  r-x
-6	        Read, write, no execute	                  rw-
+5	        Read, no write, execute	                 r-x
+6	        Read, write, no execute	                 rw-
 7	        Read, write, execute	                    rwx
 
 Use the -l argument to ls(1) to view a long directory listing that includes a column of information about a 
@@ -69,9 +69,9 @@ Option    	Letter	  Represents
 (who)	        g	      Group owner
 (who)	        o       	Other
 (who)	        a	    All (“world”)
-(action)	    +	    Adding permissions
-(action)	    -   	Removing permissions
-(action)	    =	    Explicitly set permissions
+(action)	     +	    Adding permissions
+(action)	     -   	Removing permissions
+(action)	     =	    Explicitly set permissions
 (permissions)	r	        Read
 (permissions)	w       	Write
 (permissions)	x	        Execute
