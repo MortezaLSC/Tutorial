@@ -147,7 +147,9 @@ trhodes  5232  0.0  0.2  3420  1608   0  R+    2:10AM   0:00.00 grep passwd
 root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd
 Although passwd(1) is run as a normal user, it is using the effective UID of root.
 
-The setgid permission performs the same function as the setuid permission; except that it alters the group settings. When an application or utility executes with this setting, it will be granted the permissions based on the group that owns the file, not the user who started the process.
+The setgid permission performs the same function as the setuid permission; except that it alters the group settings. 
+When an application or utility executes with this setting, it will be granted the permissions based on the group
+that owns the file, not the user who started the process.
 
 To set the setgid permission on a file, provide chmod(1) with a leading two (2):
 
