@@ -1,4 +1,4 @@
-Permissions
+4.4. Permissions
 In FreeBSD, every file and directory has an associated set of permissions and several utilities are available for
 viewing and modifying these permissions. Understanding how permissions work is necessary to make sure that users 
 are able to access the files that they need and are unable to improperly access the files used by the operating 
