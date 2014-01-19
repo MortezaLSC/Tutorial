@@ -43,7 +43,8 @@ Chane the content of address:
 
 NOTE:
 The * and & operators are opposites. The & operator takes a piece of data and tells you where it’s stored.
-The * operator takes an address and tells you what’s stored there. Because pointers are sometimes called references, the * operator is said to dereference a pointer.
+The * operator takes an address and tells you what’s stored there. Because pointers are sometimes called references, 
+the * operator is said to dereference a pointer.
 
 
 */
