@@ -33,7 +33,7 @@ int contents = *address_of_a;        === > The same as *lan = *lan - 1 .
 So after that when we say in print statement lann, lonn we mean get the address of lan and lon and show the contents 
 in integer [%i, %i]
 
-Chane the content of address:
+Change the content of address:
 *address_of_a = 99                   === > It means we want to change the contents of address 
                                            to 99 || again the same as *lan = *lan - 1 .
 
