@@ -254,3 +254,29 @@ file -z /boot/initrd-2.4.20-6.img
 filesystem data (gzip compressed data, from Unix,
 max compression)
 Just as you shouldn't judge a book by its cover, you shouldn't assume the contents of a file based on its name.
+
+
+A few simple utilities can make it easier to figure out and maintain other people's code.
+10. objdump
+This is a more advanced tool and is not for the faint of heart. It's sort of a data-mining tool for object files.
+A treasure trove of information is encoded inside your object code, and this tool lets you see it. One useful thing
+this tool can do is dump assembly code
+mixed with source lines, something gcc -S doesn't do for some reason. Your object code must be compiled with 
+debug (-g) for this to work:
+
+objdump --demangle --source myobject.o
+objdump also can help extract binary data from a core file for postmortem debug when you don't have access to a
+debugger. A complete example is too long for this article, but you need the virtual address from nm or obdump -t.
+Then, you can dump the file offsets for each virtual address with objdump -x. Finally, objdump is able to read
+from non-ELF file formats that gdb and other tools can't touch.
+
+This article is not intended as a definitive reference but as a starting point to help you become more productive.
+Each one of these commands is well documented in the Linux man and info pages. Consult them for more information 
+and more ideas.
+
+Resources for this article: /article/7658.
+
+John Fusco is a software developer with General Electric Healthcare (formerly GE Medical Systems), where he designs
+Linux software and device drivers for GE's Lightspeed series of Computed Tomography scanners
+(www.gemedicalsystems.
+com/rad/ct/products/light_series/index.html).
